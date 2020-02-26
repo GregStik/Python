@@ -1,0 +1,8 @@
+my_baby_bool = "true" 
+type(my_baby_bool) 
+print(type(my_baby_bool))
+
+my_baby_bool_two = True
+type(my_baby_bool_two)
+print(type(my_baby_bool_two))
+
