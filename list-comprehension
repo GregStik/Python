@@ -1,0 +1,76 @@
+nums = [4, 8, 15, 16, 23, 42]
+double_nums = [num*2 for num in nums]
+
+nums = range(11)
+squares = [num * num for num in nums]
+
+nums = [4, 8, 15, 16, 23, 42]
+add_ten = [num + 10 for num in nums]
+
+nums = [4, 8, 15, 16, 23, 42]
+divide_by_two = [num / 2 for num in nums]
+
+# check parity of the numbers
+nums = [4, 8, 15, 16, 23, 42]
+parity = [num%2 for num in nums]
+
+# add Hello, in front of each names in the list
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+greetings = ["Hello, " + name for name in names]
+
+# shows first char of each name in the list
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+first_character = [name[0] for name in names]
+
+# count characters of each name
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+lengths = [len(name) for name in names]
+
+# opposite boolean from list
+booleans = [True, False, True]
+opposite = [not boolean for boolean in booleans]
+
+# check if name is Jerry otherwise false
+names = ["Elaine", "George", "Jerry", "Cosmo"]
+is_Jerry = [name == "Jerry" for name in names]
+
+# check if an entry is bigger than 2
+nums = [5, -10, 40, 20, 0]
+greater_than_two = [num > 2 for num in nums]
+
+# content the product of each sublist
+nested_lists = [[4, 8], [15, 16], [23, 42]]
+product = [e1 * e2 for (e1, e2) in nested_lists]
+
+# if number 1 is greater than number 2
+nested_lists = [[4, 8], [16, 15], [23, 42]]
+greater_than = [e1 > e2 for (e1, e2) in nested_lists]
+
+# show only first number of each pair
+nested_lists = [[4, 8], [16, 15], [23, 42]]
+first_only = [e1 for (e1, e2) in nested_lists]
+
+# sum the 2 paired items from list
+a = [1.0, 2.0, 3.0]
+b = [4.0, 5.0, 6.0]
+sums = [item1 + item2 for (item1, item2) in zip(a, b)]
+
+# divide b by a
+a = [1.0, 2.0, 3.0]
+b = [4.0, 5.0, 6.0]
+quotients = [item2 / item1 for (item1, item2) in zip(a, b)]
+
+# mix 2 lists
+capitals = ["Santiago", "Paris", "Copenhagen"]
+countries = ["Chile", "France", "Denmark"]
+locations = [capital + ", " + country for (capital, country) in zip(capitals, countries)]
+
+# mixing name and ages with str()
+names = ["Jon", "Arya", "Ned"]
+ages = [14, 9, 35]
+users = ["Name: " + name + ", Age:" + str(age) for (name, age) in zip(names, ages)]
+
+# a > b
+a = [30, 42, 10]
+b = [15, 16, 17]
+greater_than = [a1 > b1 for (a1, b1) in zip(a, b)]
